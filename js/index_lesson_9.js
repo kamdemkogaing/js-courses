@@ -32,6 +32,15 @@ $(document).ready(function () {
     ]
 	};
 
+	// for (index in projects.projects) {
+	// 	console.log(index);
+	//   console.log(projects.projects[index].display);
+	// }
+
+	console.log(projects.projects[0].display);
+	console.log(projects.projects[1].display);
+	console.log(projects.projects[2].display);
+
 	var patrickFamilie = {
 	  "name": "Patrick",
 	  "alter": 32,
@@ -51,10 +60,6 @@ $(document).ready(function () {
 	  ]
 	};
 
-	for (index in projects.projects) {
-		console.log(index);
-	  console.log(projects.projects[index].display);
-	}
 
 	//Encapsulating Functions.
 	projects.display = function () {
