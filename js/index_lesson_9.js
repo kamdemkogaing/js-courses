@@ -32,6 +32,30 @@ $(document).ready(function () {
     ]
 	};
 
+	var patrickFamilie = {
+	  "name": "Patrick",
+	  "alter": 32,
+	  "verheiratet": true,
+	  "beruf": "Web Developer",
+	  "kinder": [
+	    {
+	      "name": "Luca",
+	      "alter": 3,
+	      "schulabschluss": null
+	    },
+	    {
+	      "name": "Elyas",
+	      "alter": 1,
+	      "schulabschluss": null
+	    }
+	  ]
+	};
+
+	for (index in projects.projects) {
+		console.log(index);
+	  console.log(projects.projects[index].display);
+	}
+
 	//Encapsulating Functions.
 	projects.display = function () {
 		for (project in projects.projects) {
