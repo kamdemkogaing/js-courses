@@ -44,9 +44,9 @@ $(document).ready(function() {
   	console.log("Ran the example");
   }
 
-  example2();
-	var example2 = function() {
-	  console.log("Ran the example");
-	}
+ //  example2();
+	// var example2 = function() {
+	//   console.log("Ran the example");
+	// }
 
 });
