@@ -22,6 +22,7 @@ $(document).ready(function () {
     console.log(rose.z); //undefined
 
     gold.z = 2;
-    console.log(console.z); //
- 
+    console.log(blue.z); //undefined
+    console.log(rose.z); //undefined
+
 });
