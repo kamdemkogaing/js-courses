@@ -43,16 +43,16 @@ $(document).ready(function() {
 		  var elevesQuiOntLaMoyenne = [];
 		  var elevesQuiNontPasLaMoyenne = [];
 
-	    for (var i = 0; i < eleves.length; i++) {
+		for (var i = 0; i < eleves.length; i++) {
 
-	      var eleve = eleves[i];
+		  var eleve = eleves[i];
 
-	      if (eleve.moyenne >= 10) {
-	        elevesQuiOntLaMoyenne.push(eleve.nom);
+		  if (eleve.moyenne >= 10) {
+			elevesQuiOntLaMoyenne.push(eleve.nom);
 
-	      } else {
-	        elevesQuiNontPasLaMoyenne.push(eleve.nom);
-	    }
+		  } else {
+			elevesQuiNontPasLaMoyenne.push(eleve.nom);
+		}
     }
 
     console.log("Voici les éleves qui ont la moyenne: " + elevesQuiOntLaMoyenne);
@@ -118,7 +118,7 @@ $(document).ready(function() {
 	   };
 
 	   
-     //On peut crer une fonction qui nous renvoie la moyenne d'un eleve
+       //On peut crer une fonction qui nous renvoie la moyenne d'un eleve
 	   function moyenneEleve (eleve) {
 
 	    	var sommeDesMoyennes = 0;
@@ -133,11 +133,11 @@ $(document).ready(function() {
 		  }
 
 
-      //la fonction doit renvoyer true, si l'eleve1 a une bonne moyenne que l'eleve2, sinon false
+        //la fonction doit renvoyer true, si l'eleve1 a une bonne moyenne que l'eleve2, sinon false
 	    function estMeilleur(eleveOne, eleveTwo) {
 
 	    	if (moyenneEleve(eleveOne) > moyenneEleve(eleveTwo)) {
-         console.log(eleveOne.nom + " est bien meilleur que " + eleveTwo.nom);
+                console.log(eleveOne.nom + " est bien meilleur que " + eleveTwo.nom);
 
 	    	} else {
 	    		console.log(eleveTwo.nom + " est bien meilleur que " + eleveOne.nom);
