@@ -14,6 +14,26 @@ $(document).ready(function() {
  };
  
  console.log(result());
+
+ //+++++++++++++++++++++++++++++++++++++++++++++++
+
+  var ps = document.querySelectorAll('p');
+
+  for (var i = 0; i < ps.length; i++) {
+   var p = ps[i];
+   var rougit = function () {
+       // console.log('rougit',this); //this ici fait reference á l'object clicqué
+       this.classList.toggle('red');
+   };
+   // var demo = function () {
+   //     console.log('demo',this); //this ici fait reference á l'Object global windows
+   // };
+
+   //Lorsque on cré un Listener, le this fait reference sur l'élemenet sur lequel on est.
+   p.addEventListener('click', rougit);
+   //demo();
+  }
+
 });
 
 
