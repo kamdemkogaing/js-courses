@@ -75,7 +75,7 @@ $(document).ready(function () {
     // Returns true
 
     /*
-        Hier verwenden callMeJango und jangoFett auf die gleiche Referenz – daher sind die Objekte (für Javascript) identisch.
+      Hier verwenden callMeJango und jangoFett auf die gleiche Referenz – daher sind die Objekte (für Javascript) identisch.
     */
 
 });

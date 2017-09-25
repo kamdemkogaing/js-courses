@@ -10,7 +10,5 @@ $(document).ready(function(){
 				window.clearInterval(timer);
 			}
 		}, 1000);
-
-		//Le deuxieme exemple d'une fonction CallBack
-
+		
 });

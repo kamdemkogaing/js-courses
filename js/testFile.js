@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-$(document).ready(function(){
+$(document).ready(function() {
  
  var testGlobalVarial = " Hallo Patrick Kamdem ";
  

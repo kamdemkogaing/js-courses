@@ -24,7 +24,7 @@ $(document).ready(function () {
     }*/
 
     //Die Syntax hat den Nachteil, dass wir mit festen Value arbeiten
-    /* switch (luca.age) {
+     switch (luca.age) {
         case 3:
             console.log("bravo luca tu es dans le Baumgruppe");
             break;
@@ -36,8 +36,7 @@ $(document).ready(function () {
             break;
         default:
             console.log("aucune des conditions plus haut n'est verifiées");
-    } */
-
+    } 
 
     console.log(luca.age >= 18 ? "tu es majeur" : "tu n'est pas encore majeur");
 
