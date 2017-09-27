@@ -3,11 +3,11 @@ $(document).ready(function(){
 	  //Le premier example d'une fonction CallBack
 		var i = 0;
 
-		var timer = window.setInterval(function () {
+		var timer = setInterval(function () {
 			i++;
 			console.log(i);
 			if (i === 10) {
-				window.clearInterval(timer);
+				clearInterval(timer);
 			}
 		}, 1000);
 		

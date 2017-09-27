@@ -6,5 +6,5 @@ $(document).ready(function () {
 	  window.setInterval(function() {
 	  	p.classList.toggle('blue');
 	  }, 1000);
-	  
+	  //Die Funktion würde ewig laufen.
 });

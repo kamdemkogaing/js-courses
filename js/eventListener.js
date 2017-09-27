@@ -25,13 +25,17 @@ $(document).ready(function() {
        // console.log('rougit',this); //this ici fait reference á l'object clicqué
        this.classList.toggle('red');
    };
-   // var demo = function () {
-   //     console.log('demo',this); //this ici fait reference á l'Object global windows
-   // };
+   var demo = function () {
+       console.log('demo',this); //this ici fait reference á l'Object global windows
+   };
+
+   // $("p").click(function(){
+   //  $(this).toggleClass("red");
+   // })
 
    //Lorsque on cré un Listener, le this fait reference sur l'élemenet sur lequel on est.
    p.addEventListener('click', rougit);
-   //demo();
+   demo();
   }
 
   //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

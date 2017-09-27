@@ -24,7 +24,7 @@ $(document).ready(function() {
 	  var essai = window.prompt("Entrez votre chiffre");
 
      //Je conversti le nombre entré par l'utilisateur en String et je le ajoute la base 10
-	  essai = parseInt(essai, 10);
+	  essai = window.parseInt(essai, 10);
 	 
 	  //TANT QUE le chiffre n'est pas bon, c'est á dire entre [0 10[
 	  while (essai != aDeviner && essais > 0) {
