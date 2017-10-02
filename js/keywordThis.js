@@ -2,37 +2,39 @@ $(document).ready(function () {
 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    // var fn = function (one, two) {
-    //   console.log(this, one, two);
-    // };
+    var fn = function (one, two) {
+      console.log(this, one, two);
+    };
 
-    // var r = {red: "red"}, g = {green: "green"}, b = {blue: "blue"}, y = {yellow: "yellow"};
-    // r.method = fn; // r = {red: "red",function (one, two) { console.log(this, one, two)};
+    var r = {red: "red"}, g = {green: "green"}, b = {blue: "blue"}, y = {yellow: "yellow"};
+    r.method = fn; // r = {red: "red",function (one, two) { console.log(this, one, two)};
 
-    // r.method(g,b); // r,g,b
+    r.method(g,b); // r,g,b
 
-    // fn(g,b);  // global Object,g,b
+    fn(g,b);  // global Object,g,b
 
-    // //La méthode call() réalise un appel à une fonction avec une valeur this et les arguments fournis individuellement.
-    // fn.call(r,g,b); //r,g,b
+    //La méthode call() réalise un appel à une fonction avec une valeur this et les arguments fournis individuellement.
+    fn.call(r,g,b); //r,g,b
 
-    // r.method.call(y,g,b); //y,g,b
+    r.method.method.call(y,g,b); //y,g,b
+
+    console.log(r.method);
     
-    // //Exécute un morceau de code ou une fonction après un délai determiné.
-    // // setTimeout(fn, 1000); //global Object, undefined, undefined
+    Exécute un morceau de code ou une fonction après un délai determiné.
+    setTimeout(fn, 1000); //global Object, undefined, undefined
 
-    // setTimeout(r.method, 1000); //global Object, undefined, undefined
+    setTimeout(r.method, 1000); //global Object, undefined, undefined
 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    // var ob1 = {};
-    // var ob2 = {};
+    var ob1 = {};
+    var ob2 = {};
 
-    // ob1.example = function (arg1) {
-    //     console.log(this, arg1);
-    // };
+    ob1.example = function (arg1) {
+        console.log(this, arg1);
+    };
 
-    // ob1.example(ob2);
+    ob1.example(ob2);
 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -51,7 +53,7 @@ $(document).ready(function () {
     /*
       Die Ursache, wieso diese Vergleiche fehlschlagen, liegt daran das Javascript verschiedene Typen unterschiedlich miteinander vergleicht. 
       Bei primitiven Typen wie Strings und Nummern werden die Inhalte miteinander verglichen – Andere Typen wie Arrays, einfache- und Date-Objekte werden anhand ihrer Referenz verglichen.
-      Da die beiden Objekte unterschiedliche Referenzen beherbergen schlägt der Vergleich fehl!   
+      Da die beiden Objekte unterschiedliche Referenzen beherbergen schlägt der Vergleich fehlt!   
     */
 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
