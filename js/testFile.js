@@ -20,7 +20,9 @@ $(document).ready(function() {
   var ps = document.querySelectorAll('p');
 
   for (var i = 0; i < ps.length; i++) {
+
    var p = ps[i];
+
    var rougit = function () {
        // console.log('rougit',this); //this ici fait reference á l'object clicqué
        this.classList.toggle('red');

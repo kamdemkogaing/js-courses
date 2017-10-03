@@ -2,39 +2,40 @@ $(document).ready(function () {
 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    var fn = function (one, two) {
+    /*var fn = function (one, two) {
       console.log(this, one, two);
     };
 
     var r = {red: "red"}, g = {green: "green"}, b = {blue: "blue"}, y = {yellow: "yellow"};
-    r.method = fn; // r = {red: "red",function (one, two) { console.log(this, one, two)};
+
+    r.method = fn; // r = {red: "red",method: function (one, two) { console.log(this, one, two)};
 
     r.method(g,b); // r,g,b
 
-    fn(g,b);  // global Object,g,b
+    fn(g,b);  // this represente l'object global, global Object,g,b
 
     //La méthode call() réalise un appel à une fonction avec une valeur this et les arguments fournis individuellement.
     fn.call(r,g,b); //r,g,b
 
-    r.method.method.call(y,g,b); //y,g,b
+    r.method.call(y,g,b); //y,g,b
 
-    console.log(r.method);
+    var test =  r.method.call(y,g,b);
     
-    Exécute un morceau de code ou une fonction après un délai determiné.
-    setTimeout(fn, 1000); //global Object, undefined, undefined
+    //Exécute un morceau de code ou une fonction après un délai determiné.
+    //setTimeout(fn, 1000); //global Object, undefined, undefined
 
-    setTimeout(r.method, 1000); //global Object, undefined, undefined
+    setTimeout(test, 1000); //global Object, undefined, undefined*/
 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    var ob1 = {};
+    /*var ob1 = {};
     var ob2 = {};
 
     ob1.example = function (arg1) {
         console.log(this, arg1);
     };
 
-    ob1.example(ob2);
+    ob1.example(ob2);*/
 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -58,7 +59,7 @@ $(document).ready(function () {
 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    var jangoFett = {
+    /*var jangoFett = {
        occupation: "Bounty Hunter",
        genetics: "superb"
     };
@@ -75,7 +76,7 @@ $(document).ready(function () {
 
     console.log(callMeJango === jangoFett);
     // Returns true
-
+*/
     /*
       Hier verwenden callMeJango und jangoFett auf die gleiche Referenz – daher sind die Objekte (für Javascript) identisch.
     */

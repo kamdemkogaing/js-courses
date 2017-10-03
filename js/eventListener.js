@@ -60,9 +60,13 @@ $(document).ready(function() {
   var p = document.querySelector('p');
 
   var onClick = function (e) {
-    this.classList.add('red')
+
+    this.classList.add('red');
+
     console.log('ROUGE');
+
     e.preventDefault();
+
     p.removeEventListener('click', onClick);
   };
 
