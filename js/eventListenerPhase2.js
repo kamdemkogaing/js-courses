@@ -7,6 +7,7 @@ $(document).ready(function () {
         if ( target.is("li") ) {
 
             target.children().toggle();
+            target.siblings().children().hide();
         }
     }
 
