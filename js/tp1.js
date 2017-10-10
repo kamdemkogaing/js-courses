@@ -14,12 +14,13 @@ $(document).ready(function () {
 
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++
 
+   //Select all element with Class .spoiler in to an array
 	 var elements = document.querySelectorAll('.spoiler');
 
 	 var createSpoilerButton = function (element) {
-	 	 var button = document.createElement('button');
-	 	 button.textContent = 'Afficher le spoiler';
-	 	 element.appendChild(button);
+		 	 var button = document.createElement('button');
+		 	 button.textContent = 'Afficher le spoiler';
+		 	 element.appendChild(button);
 	 };
 
 	 for (var i = 0; i < elements.length; i++) {
