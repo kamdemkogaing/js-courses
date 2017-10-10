@@ -57,19 +57,33 @@ $(document).ready(function() {
 
   //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
-  var p = document.querySelector('p');
+  // var p = document.querySelector('p');
 
-  var onClick = function (e) {
+  // var onClick = function (e) {
 
-    this.classList.add('red');
+  //   this.classList.add('red');
 
-    console.log('ROUGE');
+  //   e.preventDefault();
 
-    e.preventDefault();
+  //   p.removeEventListener('click', onClick);
+  // };
 
-    p.removeEventListener('click', onClick);
-  };
+  // p.addEventListener('click', onClick);
 
-  p.addEventListener('click', onClick);
+  //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+  var  demo = document.querySelector('#demo');
+
+  demo.focus();
+
+  document.querySelector('#form').addEventListener('submit', function (e) {
+
+      var age = parseInt(document.querySelector('#age').selectedOptions[0].value, 10);
+
+      if (age < 18) {
+        alert('Vous ne pouvez pas rentrer!');
+        e.preventDefault();
+      }
+
+  });
 });
