@@ -6,6 +6,7 @@
 	opacity: 0;
 	overflow: hidden;
   transition: opacity 0.5s;
+  color: red;
 }
 
 .spoiler-content.visible {
