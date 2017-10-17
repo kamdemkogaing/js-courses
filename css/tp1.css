@@ -1,18 +1,18 @@
 .spoiler-content {
-	/* display: none; */
-	display: inline-block;
-	width: 0;
-	height: 0;
-	opacity: 0;
-	overflow: hidden;
-  transition: opacity 0.5s;
-  color: red;
+ /* display: none; */
+ display: inline-block;
+ width: 0;
+ height: 0;
+ opacity: 0;
+ overflow: hidden;
+ transition: opacity 0.5s;
+ color: red;
 }
 
 .spoiler-content.visible {
-	/* display: block; */
-	display: inline;
-	width: auto;
-	height: auto;
-	opacity: 1;
+ /* display: block; */
+ display: inline;
+ width: auto;
+ height: auto;
+ opacity: 1;
 }
