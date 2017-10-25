@@ -3,7 +3,7 @@
 body {
 	background-color: #EEE;
 	font-family: sans-serif;
-	padding: 50px;
+	padding: 20px;
 }
 
 a {
@@ -48,6 +48,19 @@ ul.tabs, .tabs li {
 	margin-bottom: 20px;
 }
 
-/* .tab-content.active {
+.tab-content {
+	display: none;
+}
+
+.tab-content.active {
 	display: block;
-} */
+}
+
+.fade {
+	opacity: 0;
+	transition: opacity 0.3s
+}
+
+.fade.in {
+	opacity: 1;
+}

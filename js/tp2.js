@@ -19,23 +19,39 @@ $(document).ready(function () {
    
     var li = a.parentNode;
     var div = a.parentNode.parentNode.parentNode;
+    var activeTab = div.querySelector('.tab-content.active');
+    var aAfficher = div.querySelector(a.getAttribute('href'));
      
       
      if(li.classList.contains('active')) {
        return false;
      }
      
-     //On retire la class active de l'onglet actif
-     div.querySelector('.tabs .active').classList.remove('active');
-     
-     //J'ajoute la class active á l'onglet actuel
-     li.classList.add('active');
-     
-     //On retire la class active sur le contenu actif
-     div.querySelector('.tab-content.active').classList.remove('active');
-     
-     //J'ajoute la class active sur le contenu correspondant á mon clic
-     div.querySelector(a.getAttribute('href')).classList.add('active');
+     // //On retire la class active de l'onglet actif
+     // div.querySelector('.tabs .active').classList.remove('active');   
+     // //J'ajoute la class active á l'onglet actuel
+     // li.classList.add('active');
+     // //On retire la class active sur le contenu actif
+     // div.querySelector('.tab-content.active').classList.remove('active');    
+     // //J'ajoute la class active sur le contenu correspondant á mon clic
+     // div.querySelector(a.getAttribute('href')).classList.add('active');
+
+     activeTab.classList.add('fade');
+     activeTab.classList.remove('in');
+     activeTab.addEventListener('transitionend', function () {
+        this.classList.remove('fade');
+        this.classList.remove('active');
+        aAfficher.classList.add('active');
+        aAfficher.classList.add('fade');
+        aAfficher.offsetWidth;
+        aAfficher.classList.add('in');
+     });
+
+     //ON ajoute la class fade sur l'element actif
+     //A la fin de l'animation
+     //  On retire la class fade et active
+     //  On ajoute la class active et fade á l'élément á afficher
+     //  On ajoute la class in
   };
   
   //Je selectionne tous les element a dans un tableau
