@@ -57,27 +57,31 @@ $(document).ready(function () {
    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-   var domainNames = ["kamdem.de","kamdem.africa","kamdem.org","kamdem.life"];
+   /*var domainNames = ["kamdem.de","kamdem.africa","kamdem.org","kamdem.life"];
 
    var domainNamesList = function (item, index) {
    		console.log("'domain[" + index + "]:'" + item + "," + " " + "'tld[" + index + "]:'" + item);
    };
 
-   domainNames.forEach(domainNamesList);
+   domainNames.forEach(domainNamesList);*/
 
    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
    var tldsArray = [];
 
+
    var domainListLengthInCart = 10;
 
-		for (var i = 0; i < domainListLengthInCart; i++) {
-			tldsArray.push(i*10);
-			console.log(tldsArray[i]);
-		}
+   var testFunction = function () {
+       for (var i = 0; i < domainListLengthInCart; i++) {
+            tldsArray.push(i*10);
+        }
 
-    console.log(tldsArray[9]);
-   
+        return tldsArray;
+   };
+
+    console.log(testFunction());
+
 });
 
  
