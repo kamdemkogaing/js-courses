@@ -74,13 +74,25 @@ $(document).ready(function () {
 
    var testFunction = function () {
        for (var i = 0; i < domainListLengthInCart; i++) {
-            tldsArray.push(i*10);
+            tldsArray.push(i);
         }
-
-        return tldsArray;
+      return tldsArray;
    };
 
-    console.log(testFunction());
+
+   var domainTest = { content_type: 'Domains', 
+                      content: [{'domain': testFunction()}], 
+                      value: 'cartTotalPrice',
+                      currency: 'USD'
+                   };
+
+   console.log(domainTest);
+
+  // var testDomain = function() {
+  //   for (var i = 0; i<testFunction().length; i++) {
+  //     console.log('domain:'+ testFunction()[i]);
+  //   }
+  // };
 
 });
 
