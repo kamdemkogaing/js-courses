@@ -15,7 +15,11 @@ $(document).ready(function () {
  */
  
   //Je defini une fonction qui m'affice les onglets
-  var afficherOnglets = function (a) {
+  var afficherOnglets = function (a, animations ) {
+
+    if (animations === undefined) {
+      animations = true;
+    }
    
     var li = a.parentNode;
     var div = a.parentNode.parentNode.parentNode;
@@ -36,16 +40,25 @@ $(document).ready(function () {
      // //J'ajoute la class active sur le contenu correspondant á mon clic
      // div.querySelector(a.getAttribute('href')).classList.add('active');
 
-     activeTab.classList.add('fade');
-     activeTab.classList.remove('in');
-     activeTab.addEventListener('transitionend', function () {
-        this.classList.remove('fade');
-        this.classList.remove('active');
-        aAfficher.classList.add('active');
-        aAfficher.classList.add('fade');
-        aAfficher.offsetWidth;
-        aAfficher.classList.add('in');
-     });
+     if (animations) {
+       activeTab.classList.add('fade');
+       activeTab.classList.remove('in');
+
+       var transitionend = function () {
+          this.classList.remove('fade');
+          this.classList.remove('active');
+          aAfficher.classList.add('active');
+          aAfficher.classList.add('fade');
+          aAfficher.offsetWidth;
+          aAfficher.classList.add('in');
+          activeTab.removeEventListener('transitionend', transitionend);
+       };
+
+       activeTab.addEventListener('transitionend',transitionend);
+     } else {
+       aAfficher.classList.add('active');
+       activeTab.classList.remove('active');
+     }
 
      //ON ajoute la class fade sur l'element actif
      //A la fin de l'animation
@@ -71,15 +84,18 @@ $(document).ready(function () {
    */
 
    //Je lis # (hash) d'un lien
-   var hash = window.location.hash;
-   
-   var a = document.querySelector('a[href="' + hash + '"]');
+   var hasChange = function (e) {
+     var hash = window.location.hash;
+     var a = document.querySelector('a[href="' + hash + '"]');
+     if (a !== null && !a.classList.contains('active')) {
+       afficherOnglets(a, e !== undefined);
+     }
+   };
+
+   window.addEventListener('haschange', hasChange);
+   hasChange();
   
-   if (a !== null && !a.classList.contains('active')) {
-     afficherOnglets(a);
-   }
-  
-  })()
+  })();
 });
 
 
