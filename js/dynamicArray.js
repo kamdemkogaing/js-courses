@@ -1,24 +1,22 @@
 $(document).ready(function () {
 
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    var tldsArray = ["kamdem.de","kamdem.org","kamdem.africa","kamdem.com","kamdem.cm"];
+    var myarray = [];
+    var myJSON = "";
 
-    var tldsArray = ["kamdem.de","kamdem.org","kamdem.africa","kamdem.com","kamdem.cm","kamdem.life","kamdem.vip"];
+    for (var i = 0; i < tldsArray.length; i++) {
 
-    var domainNamesObject = {};
+        var content = {
+            "domain":tldsArray[i],
+            "tld":tldsArray[i].substr(tldsArray[i].lastIndexOf('.')+1)
+        };
 
-    var domainNamesObjectArray = [];
+        myarray.push(content);
+    }
 
+    myJSON = JSON.stringify(myarray);
 
-
-    var tldsArrayItems = function () {
-        for (var i = 0; i<tldsArray.length; i++) {
-            domainNamesObject.domain = tldsArray[i];
-            domainNamesObject.tlds = tldsArray[i];
-            domainNamesObjectArray.push(domainNamesObject);
-        }
-        return domainNamesObjectArray;
-    };
-
-
-    console.log(tldsArrayItems());
+    console.log(myJSON);
 
 });
