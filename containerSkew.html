@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>5-Eck</title>
+
+        <style type="text/css">
+            #box {
+                background:#000;
+                width:200px;
+                height:200px;
+                position:relative;
+                top:40px;
+            }
+
+            #box:before, 
+            #box:after {
+                content: "";
+                display:block;
+                position:absolute;
+                background:transparent;
+                width:120px;
+                height:0px;
+                border:40px solid transparent;
+            }
+
+            #box:after {
+                border-top-color:#000;
+                border-bottom:none;
+                bottom:-40px;
+            }
+    </style>
+
+        <div id="box">woooot</div>
+    </body>
+</html>
