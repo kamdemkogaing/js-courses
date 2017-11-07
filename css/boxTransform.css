@@ -1,44 +1,49 @@
 
 div.top-content:before {
-    left: -1%;
-    transform: skew(0deg,8.5deg);
+    transform: skew(0deg,3.5deg);
+
     backface-visibility: hidden;
-    border: 30px solid #baca0e;
-    margin-top: -415px;
+    border-bottom: 23px solid rgba(242,204,17,0);
+    margin-top: 0;
     position: absolute;
-    width: 51.2%;
+    width: 49.2%;
     z-index: 0;
-    background: #baca0e;
+    background: #95a019;
     height: 50px;
-    top: 600px;
+    top: 200px;
     content: '';
 }
 
 div.top-content:after {
-   right: -1%;
-   transform: skew(0deg,-8.5deg);
-   backface-visibility: hidden;
-   border: 30px solid #baca0e;
-   margin-top: -415px;
-   position: absolute;
-   width: 51.2%;
-   z-index: 0;
-   background: #baca0e;
-   height: 50px;
-   top: 600px;
-   content: '';
+    right: 0%;
+    transform: skew(0deg,-3.5deg);
+
+    backface-visibility: hidden;
+    border-bottom: 23px solid rgba(242,204,17,0);
+    margin-top: 0;
+    position: absolute;
+    width: 348px;
+    z-index: 0;
+    background: #95a019;
+    height: 50px;
+    top: 200px;
+    content: '';
 }
 
 
 div.top-content {
-    height: 100%;
-    width: 100%;
-    background-color: #7b7b92;
+      position: absolute;
+      top: 40px;
+      left: 100px;
+      height: 50%;
+      width: 50%;
+      background-color: #7b7b92;
+      margin: auto;
 }
 
 .text-description {
-    padding: 70px;
-    text-align: center;
-    font-size: xx-large;
-    text-transform: uppercase;
+      padding: 70px;
+      text-align: center;
+      font-size: xx-large;
+      text-transform: uppercase;
 }
