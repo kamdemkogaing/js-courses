@@ -1,5 +1,4 @@
 .spoiler-content {
- /* display: none; */
  display: inline-block;
  width: 0;
  height: 0;
@@ -10,7 +9,6 @@
 }
 
 .spoiler-content.visible {
- /* display: block; */
  display: inline;
  width: auto;
  height: auto;

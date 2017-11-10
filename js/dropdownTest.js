@@ -28,28 +28,28 @@ $(document).ready(function () {
   
   var testObject = [
   { 
-     usecase: "DEFAULT", 
-     welcomeOffer: false, 
-     normalPriceOutput: true, 
-     normalPrice: 1.99, 
-     grossNormalPriceOutput: true, 
-     grossNormalPrice: 1.99, 
-     actionPriceOutput: true, 
-     actionPrice: 0.99, 
-     grossActionPriceOutput: true, 
-     grossActionPrice: 0.99 
+   usecase: "DEFAULT", 
+   welcomeOffer: false, 
+   normalPriceOutput: true, 
+   normalPrice: 1.99, 
+   grossNormalPriceOutput: true, 
+   grossNormalPrice: 1.99, 
+   actionPriceOutput: true, 
+   actionPrice: 0.99, 
+   grossActionPriceOutput: true, 
+   grossActionPrice: 0.99 
   },
   { 
-     usecase: "DEFAULT", 
-     welcomeOffer: false, 
-     normalPriceOutput: true, 
-     normalPrice: 1.99, 
-     grossNormalPriceOutput: true, 
-     grossNormalPrice: 1.99, 
-     actionPriceOutput: true, 
-     actionPrice:1.99, 
-     grossActionPriceOutput: true, 
-     grossActionPrice: 0.99 
+   usecase: "DEFAULT", 
+   welcomeOffer: false, 
+   normalPriceOutput: true, 
+   normalPrice: 1.99, 
+   grossNormalPriceOutput: true, 
+   grossNormalPrice: 1.99, 
+   actionPriceOutput: true, 
+   actionPrice:1.99, 
+   grossActionPriceOutput: true, 
+   grossActionPrice: 0.99 
   }]
 
    // console.log(testObject[1].actionPrice);

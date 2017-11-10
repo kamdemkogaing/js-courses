@@ -1,12 +1,16 @@
 $(document).ready(function () {
+	
 	(function () {
-	 var  g = document.createElement('script'),
-	      s = document.getElementsByTagName('script')[0];
-	      g.type = 'text/javascript';
-	      g.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js';
-	      s.parentNode.insertBefore(g, s);
+	   var axel = Math.random() + "";
+	   var a = axel * 10000000000000;
 
-
-	      document.write('<html><h2>PATRICK KAMDEM</h2></html>');
+	   var d = document,
+		 g = d.createElement('iframe'),
+		 s = d.getElementsByTagName('iframe')[0];
+		 g.width = '1';
+		 g.height = '1';
+		 g.frameborder = "0";
+		 g.style = "display:none";
+		 g.src = 'https://www.patelot.de'
 	})();	
 });

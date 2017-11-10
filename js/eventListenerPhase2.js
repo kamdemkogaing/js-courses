@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
-    function handler(event) {
+  function handler(event) {
 
-        var target = $(event.target);
+    var target = $(event.target);
 
-        if ( target.is("li") ) {
+    if ( target.is("li") ) {
 
-            target.children().toggle();
-            target.siblings().children().hide();
-        }
+      target.children().toggle();
+      target.siblings().children().hide();
     }
+  }
 
-    $("ul").click(handler).find("ul").hide();
+  $("ul").click(handler).find("ul").hide();
 });
