@@ -15,8 +15,8 @@ $(document).ready(function () {
         myarray.push(content);
     }
 
-    myJSON = JSON.stringify(myarray);
+    // myJSON = JSON.stringify(myarray);
 
-    console.log(myJSON);
+    console.log(myarray);
 
 });
