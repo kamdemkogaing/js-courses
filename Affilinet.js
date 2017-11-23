@@ -9,7 +9,7 @@ function affilinet(w, d, namespace, domain, progId, tagId, undefined){
 
   var arrayTariffIdAffilinet = [];
 
-  for (var i = 0; i < UNOUNO.tracking.cart.products.length ) {
+  for (var i = 0; i < UNOUNO.tracking.cart.products.length; i++ ) {
       var content = {
         product_id: UNOUNO.tracking.cart.products[i].tariffId, 
         product_price: UNOUNO.tracking.cart.products[i].costs.firstBilling, 
