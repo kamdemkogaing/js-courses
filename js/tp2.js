@@ -33,12 +33,6 @@ $(document).ready(function () {
 	      // (2) Ich füge die active Class zum aktuellen Tab hinzu
 	      li.classList.add('active');
 
-	      //(3) acitve Class bei aktivem Inhalt entfernen
-	      // div.querySelector('.tab-content.active').classList.remove('active');
-
-	      //(4) Ich füge die active Class zum entsprechenden Inhalt hinzu
-	      // div.querySelector(a.getAttribute('href')).classList.add('active');
-
 	      /* 
 		      (5) Wir fügen die Class fade auf dem aktiven Element hinzu
 		          (6) Am Ende der Animation
