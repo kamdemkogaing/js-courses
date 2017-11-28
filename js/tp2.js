@@ -1,6 +1,5 @@
 
 $(document).ready(function () {
-
 	 (function () {
 	   /*
 	 		WENN ich auf einen Tab klicke
@@ -40,7 +39,6 @@ $(document).ready(function () {
 			          (8) wir fügen dem anzuzeigenden Element die class fade und active hinzu
 			          (9) wir fügen die class in
 	      */
-
 	      if (animations) {
 		      activeTab.classList.add('fade');
 		      activeTab.classList.remove('in');
@@ -81,7 +79,6 @@ $(document).ready(function () {
 	    (7) ACTIVE CLASS auf anderen Tabs entfernen
 	    (8) ANZEIGEN / INHALT ausblenden
 	   */
-
      var hashChange = function () {
 		   // (5) Ich hole den Hash vo der URLS
 		   var hash = window.location.hash;
@@ -95,6 +92,7 @@ $(document).ready(function () {
 
 	   window.addEventListener('hashchange', hashChange);
 	   hashChange();
+
    })();
 });
 

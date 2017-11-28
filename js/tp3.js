@@ -71,14 +71,17 @@ $(document).ready(function () {
 	   var hashChange = function () {
 	   	// (5) Ich hole den Hash vo der URLS
 	   	var hash = window.location.hash;
+
 	   	var a = $('a[href="' + hash +'"]');
 
-	   	if (a !== null && !a.hasClass('active')) {
-	   		afficherTabs(a, false);
-	   	}
+		   	if (a !== null && !a.hasClass('active')) {
+		   		afficherTabs(a, false);
+		   	}
 	   };
 
-	   window.addEventListener('hashchange', hashChange);
+	   $(window).on('hashchange', hashChange);
+
 	   hashChange();
+
 	})();
 }); 
