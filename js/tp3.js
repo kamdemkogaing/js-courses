@@ -5,7 +5,6 @@ $(document).ready(function () {
 		  var tabContent;
 		  var hrefLinks = $(this).find('a');
 
-
 		  activeTab = $(hrefLinks.filter('[href="'+window.location.hash+'"]')[0] || hrefLinks[0]);
 		  activeTab.addClass('active');
 
