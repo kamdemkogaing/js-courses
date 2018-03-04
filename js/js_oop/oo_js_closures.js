@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	/* the 'this' keyword */
+  /* the 'this' keyword */
   /* Example 1 */
 
 	var r= {}, g={g:1}, b={b:2};
@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 	fn(g, b); // {g:1}, b={b:2}
 
-	/////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////
   // Example 2
 	var fn = function (one, two) {
 		console.log(this, one, two);
