@@ -14,7 +14,7 @@ $(document).ready(function () {
   blue.b=2;
   console.log(blue);
 
-  //The main difference between functions extend() and Object.create(): 
+  //The main difference between functions extend() and Object.create()
   var rose = Object.create(gold);
   rose.b=2;
   console.log(rose);
@@ -26,5 +26,6 @@ $(document).ready(function () {
   console.log(gold);
   console.log(blue.z); // undefined
   console.log(rose.z); // 3
+  rose.toString();
 
 });
